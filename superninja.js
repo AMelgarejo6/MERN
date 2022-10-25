@@ -32,8 +32,16 @@ class Sensei extends Ninja {
         const drink = super.drinkSake();
         console.log("What one programmer can do in one month, two programmers can do in two months.");
     }
+
+    sayName(){
+        console.log(`Sensei's name is ${this.name}`);
+    }
 }
 
 const superSensei = new Sensei("Master Splinter");
 superSensei.speakWisdom();
 superSensei.showStats();
+superSensei.sayName();
+
+const myNinja = new Ninja("Kyle");
+myNinja.sayName();
